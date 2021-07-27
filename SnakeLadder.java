@@ -9,6 +9,7 @@ class Game{
 public class SnakeLadder {
 
 	public static void main(String[] args) {
+		int turns=0;
 		Game player1 = new Game();
 		while(player1.position<100) {
 		int dicenumber= dice();
@@ -21,8 +22,10 @@ public class SnakeLadder {
 		if(player1.position<0) {
 			player1.position=0;
 		}
+		turns++;
 		}
 		System.out.println("position of player1 is : " +player1.position);
+		System.out.println("number of turns of dice are : " +turns);
 		
 		
 		
