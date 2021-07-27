@@ -14,6 +14,9 @@ public class SnakeLadder {
 		int dicenumber= dice();
 		int option= condition();
 		int move = dicenumber*option;
+		if(player1.position+move>100) {
+			continue;
+		}
 		player1.position=player1.position+move;
 		if(player1.position<0) {
 			player1.position=0;
